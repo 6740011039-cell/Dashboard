@@ -34,14 +34,31 @@ Performance Dashboard</title>
         }
 
         .dashboard-container {
-            width: 95%;
-            max-width: 1200px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-            overflow: hidden;
-            margin-bottom: 50px;
-        }
+    width: 95%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    
+    /* เงาปกติ */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    
+    /* กรอบเรืองแสง */
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow:
+        0 0 20px rgba(0, 255, 255, 0.6),
+        0 0 40px rgba(0, 255, 255, 0.4),
+        0 20px 40px rgba(0,0,0,0.3);
+}
+
+    .dashboard-container:hover {
+    box-shadow:
+        0 0 30px rgba(0, 255, 255, 0.9),
+        0 0 60px rgba(0, 255, 255, 0.6),
+        0 25px 50px rgba(0,0,0,0.4);
+    transition: 0.4s ease;
+}
 
         iframe {
             width: 100%;
@@ -79,7 +96,7 @@ Performance Dashboard</title>
     </div>
 
     <div class="footer">
-        พรรวษา เขียยวสวัสดิ์ 6740011039
+        พรรวษา เขียวสวัสดิ์ 6740011039
     </div>
 
 </body>
