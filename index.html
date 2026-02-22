@@ -1,16 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>Sales Dashboard</title>
+    <meta charset="UTF-8">
+    <title>Sales & Profit
+Performance Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0B1E3D, #123A6B);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px 20px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        .dashboard-container {
+            width: 95%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 900px;
+            border: none;
+        }
+
+        .footer {
+            color: white;
+            opacity: 0.7;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: 700px;
+            }
+            .header h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
 </head>
-<body style="margin:0;">
-    <iframe 
-        width="100%" 
-        height="900"
-        src="https://lookerstudio.google.com/reporting/7a543bb8-a46d-4409-8da2-a48c424316c7"
-        frameborder="0"
-        style="border:0"
-        allowfullscreen>
-    </iframe>
+
+<body>
+
+    <div class="header">
+        <h1>Sales Performance Dashboard</h1>
+        <p>Data Visualization Project</p>
+    </div>
+
+    <div class="dashboard-container">
+        <iframe 
+            src="<iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/7a543bb8-a46d-4409-8da2-a48c424316c7/page/iaipF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="footer">
+        พรรวษา เขียยวสวัสดิ์ 6740011039
+    </div>
+
 </body>
 </html>
